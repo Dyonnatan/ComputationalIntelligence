@@ -32,6 +32,14 @@ def function(w, x, b):
     else:
         return 1
     
+def function2(w, x, b):
+    u = w[0]*x[0] + w[1]*x[1] + b
+    f = 0.6*(1-u*u)
+    if( f < 0):
+        return 0
+    else:
+        return 1
+    
 X = [[0,0],[0,1],[1,0],[1,1]]
 d = [0,0,0,1]
 adaline(10, 0, 0.1, X, d)
