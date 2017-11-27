@@ -27,18 +27,8 @@ def adaline(max_it, epsilon, alpha, X, d):
     print(bias)
 
 def function(w, x, b):
-    if( w[0]*x[0] + w[1]*x[1] + b < 0):
-        return 0
-    else:
-        return 1
-    
-def function2(w, x, b):
     u = w[0]*x[0] + w[1]*x[1] + b
-    f = 0.6*(1-u*u)
-    if( f < 0):
-        return 0
-    else:
-        return 1
+    return (math.exp(u) - math.exp(u * -1)) / (math.exp(u) + math.exp(u * -1))
     
 X = [[0,0],[0,1],[1,0],[1,1]]
 d = [0,0,0,1]
