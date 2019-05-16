@@ -1,2 +1,2 @@
 # ComputationalIntelligence
-Trabalhos de Inteligência Computacional
+Adaline and Perceptron Implementation in Python
